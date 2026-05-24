@@ -1,0 +1,12 @@
+import type { Request, Response, NextFunction } from 'express';
+import type { UserRole } from '../modules/auth/auth.interface.js';
+
+export const authorizeRoles = (...allowedRoles: UserRole[]) => {
+  return (req: Request, res: Response, next: NextFunction): void => {
+    if (!req.user || !allowedRoles.includes(req.user.role)) {
+      res.status(403).json({ success: false, message: 'Valid token but insufficient role/permissions' });
+      return;
+    }
+    next();
+  };
+};
