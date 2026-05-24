@@ -2,7 +2,7 @@
 
 DevPulse is a high-performance, asynchronous REST API platform designed for efficient issue tracking and infrastructure status monitoring. Built with a robust relational database layer, it automates schema migrations and lifecycle triggers seamlessly upon server startup.
 
-🔗 **Live URL:** [https://devpulse-api.neon.tech](https://your-live-deployment-url.com) *(Replace with your actual deployment link)*
+🔗 **Live URL:** https://devpulse-chi-six.vercel.app
 
 ---
 
